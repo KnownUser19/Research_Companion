@@ -33,24 +33,7 @@ An intelligent AI chatbot built with Streamlit that combines **RAG (Retrieval-Au
 
 ### Local Development
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/smart-research-assistant.git
-   cd smart-research-assistant
-   ```
-
-2. **Create virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure API keys**
+1. **Configure API keys**
    
    Create `.streamlit/secrets.toml`:
    ```toml
@@ -58,32 +41,13 @@ An intelligent AI chatbot built with Streamlit that combines **RAG (Retrieval-Au
    # Add other keys as needed
    ```
 
-5. **Run the app**
+2. **Run the app**
    ```bash
    streamlit run app.py
    ```
 
 ### Streamlit Cloud Deployment
 
-1. **Fork/Push to GitHub**
-   - Push this project to your GitHub repository
-
-2. **Deploy on Streamlit Cloud**
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Click "New app"
-   - Select your repository
-   - Set main file path: `app.py`
-
-3. **Configure Secrets**
-   - In app settings, go to "Secrets"
-   - Add your API keys:
-   ```toml
-   GROQ_API_KEY = "your_groq_api_key"
-   OPENAI_API_KEY = "your_openai_api_key"
-   GOOGLE_API_KEY = "your_google_api_key"
-   SERPER_API_KEY = "your_serper_api_key"
-   TAVILY_API_KEY = "your_tavily_api_key"
-   ```
 
 ## 🔑 API Keys Setup
 
@@ -175,17 +139,6 @@ export TAVILY_API_KEY="your_key"
 - gemini-1.5-pro
 - gemini-1.5-flash
 - gemini-pro
-
-## 🐛 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| "No LLM API keys configured" | Add at least one API key in secrets |
-| "Failed to initialize model" | Check API key validity and quota |
-| Document upload fails | Ensure file format is PDF, TXT, or DOCX |
-| Web search not working | DuckDuckGo is used as fallback automatically |
-| Slow responses | Try smaller/faster models like `llama-3.1-8b-instant` |
-| Import errors | Run `pip install -r requirements.txt` |
 
 ## 📄 License
 
