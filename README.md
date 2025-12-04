@@ -47,7 +47,7 @@ An intelligent AI chatbot built with Streamlit that combines **RAG (Retrieval-Au
    ```
 
 ### Streamlit Cloud Deployment
-
+https://researchcompanion-nvnufwvkasfrzxv7mz2mrn.streamlit.app/
 
 ## 🔑 API Keys Setup
 
